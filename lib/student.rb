@@ -25,7 +25,7 @@ class Student
   
   def self.drop_table
     sql =  <<-SQL
-      SELECT * FROM students
+      "SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name='students';"
      SQL
      
     DB[:conn].execute(sql)  
