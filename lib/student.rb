@@ -43,8 +43,7 @@ class Student
   end
   
   def self.create(attributes)
-    attributes.each do |key, value|
-    end
+    student = Student.new()
     
   end
   
