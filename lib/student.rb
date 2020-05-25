@@ -45,6 +45,7 @@ class Student
   def self.create(attributes)
     student = Student.new(attributes[:name], attributes[:grade])
     student.save
+    return student
   end
   
 end
